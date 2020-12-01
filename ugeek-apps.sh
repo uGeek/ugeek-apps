@@ -33,7 +33,7 @@ case $CHOICE in
             sudo curl -L https://raw.githubusercontent.com/uGeek/s-screen/main/s -o /usr/bin/s && sudo chmod +x /usr/bin/s
             ;;
         3)
-            echo "You chose Option 3"
+            echo "Instalando todo.txt-sync"
             wget https://raw.githubusercontent.com/uGeek/todo.txt-sync/master/todo.txt-sync
 
             ;;
