@@ -4,3 +4,12 @@
 ```
 wget https://raw.githubusercontent.com/uGeek/ugeek-apps/main/ugeek-apps.sh
 ```
+
+## Ejecutar
+```
+bash ugeek-apps.sh
+```
+
+## Menú
+Selecciona en el menú, la app que deseas instalar
+![ugeek-app][ugeek-apps.jpg)
