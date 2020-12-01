@@ -1,11 +1,13 @@
 #!/bin/bash
+VERSION="v0.1 01/12/2020"
 
 HEIGHT=15
 WIDTH=40
 CHOICE_HEIGHT=4
-BACKTITLE="uGeek"
+BACKTITLE="uGeek. $VERSION"
 TITLE="uGeek app's"
 MENU="Elige una de las siguientes aplicaciones:"
+
 
 OPTIONS=(1 "dk. Gestión de docker"
          2 "s de screen"
@@ -24,12 +26,11 @@ clear
 case $CHOICE in
         1)
             echo "Instalando dk ..."
-            sudo curl -L https://raw.githubusercontent.com/uGeek/dk/master/dk \
-          -o /usr/bin/dk && sudo chmod +x /usr/bin/dk
+            sudo curl -L https://raw.githubusercontent.com/uGeek/dk/master/dk -o /usr/bin/dk && sudo chmod +x /usr/bin/dk
             ;;
         2)
             echo "Instalando s-screen..."
-            wget https://raw.githubusercontent.com/uGeek/todo.txt-sync/master/todo.txt-sync
+            sudo curl -L https://raw.githubusercontent.com/uGeek/s-screen/main/s -o /usr/bin/s && sudo chmod +x /usr/bin/s
             ;;
         3)
             echo "You chose Option 3"
