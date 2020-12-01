@@ -14,6 +14,7 @@ OPTIONS=(1 "dk. Gestión de docker"
          3 "todo.txt-sync. todo.txt multiusuario"
          4 "search. Buscar en la web"
          5 "ttodo"
+         6 "vcb. Control versiones"
          )
 
 CHOICE=$(dialog --clear \
@@ -43,8 +44,11 @@ case $CHOICE in
             echo "Instalando search..."
             sudo curl -L https://raw.githubusercontent.com/uGeek/search/master/search -o /usr/bin/sx && sudo chmod +x /usr/bin/sx
             ;;
-         5) 
+        5) 
             echo "Instalando ttodo..."
             git clone https://github.com/uGeek/ttodo.git ~/ttodo
+            ;;
+        6)  
+            sudo curl -L https://raw.githubusercontent.com/uGeek/version-control-bash/main/vcb -o /usr/bin/vcb && sudo chmod +x /usr/bin/vcb
             ;;
 esac
