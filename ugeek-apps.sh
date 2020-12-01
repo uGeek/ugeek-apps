@@ -12,7 +12,9 @@ MENU="Elige una de las siguientes aplicaciones:"
 OPTIONS=(1 "dk. Gestión de docker"
          2 "s de screen"
          3 "todo.txt-sync. todo.txt multiusuario"
-         4 "search. Buscar en la web")
+         4 "search. Buscar en la web"
+         5 "ttodo"
+         )
 
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
@@ -38,7 +40,11 @@ case $CHOICE in
 
             ;;
         4)
-            echo "Dergando uGeek app's..."
+            echo "Instalando search..."
             sudo curl -L https://raw.githubusercontent.com/uGeek/search/master/search -o /usr/bin/sx && sudo chmod +x /usr/bin/sx
+            ;;
+         5) 
+            echo "Instalando ttodo..."
+            git clone https://github.com/uGeek/ttodo.git ~/ttodo
             ;;
 esac
