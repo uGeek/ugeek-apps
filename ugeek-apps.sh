@@ -11,8 +11,8 @@ MENU="Elige una de las siguientes aplicaciones:"
 
 OPTIONS=(1 "dk. Gestión de docker"
          2 "s de screen"
-         3 "todo.txt-sync. Multicuenta todo.txt"
-         4 "actualizar ugeek-apps")
+         3 "todo.txt-sync. todo.txt multiusuario"
+         4 "search. Buscar en la web")
 
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
@@ -39,6 +39,6 @@ case $CHOICE in
             ;;
         4)
             echo "Dergando uGeek app's..."
-            wget https://raw.githubusercontent.com/uGeek/ugeek-apps/main/ugeek-apps.sh
+            sudo curl -L https://raw.githubusercontent.com/uGeek/search/master/search -o /usr/bin/sx && sudo chmod +x /usr/bin/sx
             ;;
 esac
