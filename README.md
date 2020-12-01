@@ -12,4 +12,4 @@ bash ugeek-apps.sh
 
 ## Menú
 Selecciona en el menú, la app que deseas instalar
-![ugeek-app][ugeek-apps.jpg)
+![ugeek-apps](ugeek-apps.jpg)
