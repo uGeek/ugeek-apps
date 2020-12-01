@@ -50,5 +50,6 @@ case $CHOICE in
             ;;
         6)  
             sudo curl -L https://raw.githubusercontent.com/uGeek/version-control-bash/main/vcb -o /usr/bin/vcb && sudo chmod +x /usr/bin/vcb
+            xdg-open https://ugeek.github.io/version-control-bash/
             ;;
 esac
