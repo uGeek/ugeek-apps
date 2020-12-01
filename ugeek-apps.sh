@@ -38,6 +38,6 @@ case $CHOICE in
             ;;
         4)
             echo "Dergando uGeek app's..."
-            wget https://raw.githubusercontent.com/uGeek/ugeek-apps/master/ugeek-apps.sh
+            wget https://raw.githubusercontent.com/uGeek/ugeek-apps/main/ugeek-apps.sh
             ;;
 esac
