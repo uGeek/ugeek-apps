@@ -54,6 +54,6 @@ case $CHOICE in
             xdg-open https://ugeek.github.io/version-control-bash/
             ;;
         7)  
-            sudo curl -L https://github.com/uGeek/apps/blob/main/md2org -o /usr/bin/md2org && sudo chmod +x /usr/bin/md2org
+            sudo curl -L https://raw.githubusercontent.com/uGeek/apps/main/md2org -o /usr/bin/md2org && sudo chmod +x /usr/bin/md2org
             ;;
 esac
