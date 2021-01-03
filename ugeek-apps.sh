@@ -15,6 +15,7 @@ OPTIONS=(1 "dk. Gestión de docker"
          4 "search. Buscar en la web"
          5 "ttodo"
          6 "vcb. Control versiones"
+         7 "md2org. Convertir md a orgmode"
          )
 
 CHOICE=$(dialog --clear \
@@ -51,5 +52,8 @@ case $CHOICE in
         6)  
             sudo curl -L https://raw.githubusercontent.com/uGeek/version-control-bash/main/vcb -o /usr/bin/vcb && sudo chmod +x /usr/bin/vcb
             xdg-open https://ugeek.github.io/version-control-bash/
+            ;;
+        7)  
+            sudo curl -L https://github.com/uGeek/apps/blob/main/md2org -o /usr/bin/md2org && sudo chmod +x /usr/bin/md2org
             ;;
 esac
