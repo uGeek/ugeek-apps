@@ -43,7 +43,7 @@ case $CHOICE in
             ;;
         4)
             echo "Instalando search..."
-            sudo curl -L https://raw.githubusercontent.com/uGeek/search/master/search -o /usr/bin/sx && sudo chmod +x /usr/bin/sx
+            sudo curl -L https://raw.githubusercontent.com/uGeek/search/master/search -o /usr/bin/sx && sudo chmod +x /usr/bin/sx ; echo "Introduce el comando sx para utilizar search" ; echo "" ; echo "sx h"
             ;;
         5) 
             echo "Instalando ttodo..."
