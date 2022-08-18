@@ -2,7 +2,7 @@
 
 ## Descarga y ejecuta
 ```
- sudo apt install dialog ; wget https://raw.githubusercontent.com/uGeek/ugeek-apps/main/ugeek-apps.sh ; chmod +x * ; bash ugeek-apps.sh 
+wget -qO- https://raw.githubusercontent.com/uGeek/ugeek-apps/main/ugeek-apps.sh | bash
 ``` 
 
 
