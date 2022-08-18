@@ -2,7 +2,7 @@
 
 ## Descarga y ejecuta
 ```
-wget -qO- https://raw.githubusercontent.com/uGeek/ugeek-apps/main/ugeek-apps.sh | bash
+wget -qO- https://raw.githubusercontent.com/uGeek/ugeek-apps/main/ugeek.sh | bash
 ``` 
 
 
